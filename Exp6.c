@@ -1,11 +1,4 @@
-/******************************************************************************
 
-Welcome to GDB Online.
-  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
-  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
-  Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 int i,n = 100,size = 0;
@@ -30,7 +23,7 @@ void insert(){
      printf("Enter the position to insert: ");
      scanf("%d",&pos);
      for (i=size;i>=pos;i--){
-            a[i] = a[i-1];
+            a[i+1] = a[i];
 
      }
      a[pos-1] = x;
